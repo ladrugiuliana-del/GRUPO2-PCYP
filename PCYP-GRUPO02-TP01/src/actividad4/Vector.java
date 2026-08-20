@@ -19,7 +19,7 @@ public class Vector {
 			
 				candidato = scanner.nextInt();
 				
-				if (candidato != 0) {
+				if (candidato != 0 && candidato >= -100 && candidato <= 100) {
 					numeros[i]= candidato;
 					valido = true;
 				}else {
