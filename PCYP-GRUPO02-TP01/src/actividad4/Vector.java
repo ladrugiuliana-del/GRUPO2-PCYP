@@ -23,7 +23,7 @@ public class Vector {
 					numeros[i]= candidato;
 					valido = true;
 				}else {
-					System.out.println("El valor deber ser distinto de 0. Reintente.");
+					System.out.println("El valor deber ser distinto de 0 y estar comprendido entre -100 y 100. Reintente.");
 					System.out.print("Ingrese el valor N°" + (i+1) + ": ");
 				}
 				
