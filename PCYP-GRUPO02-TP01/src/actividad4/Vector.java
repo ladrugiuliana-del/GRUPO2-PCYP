@@ -33,10 +33,17 @@ public class Vector {
 		}
 		
 			//Muestra del vector
-			System.out.print("VECTOR: ");
+		
+			System.out.print("\nVECTOR: ");
 			for (int i = 0; i < numeros.length; i++) {
-			    System.out.print(numeros[i] + " ");
+			    System.out.print(" [" +numeros[i] + "]");
 			}
+			System.out.println("\n---------------------------------------------------");
+			
+			System.out.println("\n---------- OPERACIONES -------------");
+			
+			Operaciones.sumarPromediarPositivos(numeros);
+			Operaciones.sumarPromediarPosicionPar(numeros);
 			scanner.close();
 	
 
