@@ -1,6 +1,36 @@
 package ar.edu.unju.stringapp;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+
 public class StringUtils {
+	
+	public static String convertirArchivo(String rutaArchivo) {
+		String contenido = null;
+		
+		try {
+            // En esta linea tenemos que especificar la ruta del archivo .txt que queremos convertir
+            Path ruta = Path.of(rutaArchivo); 
+            contenido = Files.readString(ruta); 
+        } catch (IOException e) {
+            System.err.println("Error al leer el archivo: " + e.getMessage());
+        }
+		return contenido;
+	}
+	
+	public static int contarPalabras(String texto) {
+        // 1. Validar si la cadena está vacía o es nula
+        if (texto == null || texto.trim().isEmpty()) {
+            return 0;
+        }
+
+        // 2. Limpiar espacios iniciales/finales y dividir por uno o más espacios
+        String[] palabras = texto.trim().split("\\s+");
+
+        // 3. Devolver la cantidad de elementos
+        return palabras.length;
+    }
 	
 	public static boolean esVocal(char caracter) {
 		switch (caracter) {
