@@ -54,4 +54,25 @@ public class StringUtils {
 		}
 		return false;
 	}
+
+public static int contarLineas(String texto) {
+
+    if (texto == null || texto.isEmpty()) {
+        return 0;
+    }
+    
+    // Corta el texto en cada salto de línea y cuenta los fragmentos
+    String[] lineas = texto.split("\r\n|\r|\n");
+    return lineas.length;
+	}
+
+
+public static boolean esSigno(char caracter) {
+	if ((caracter >= 33 & caracter <=47) || (caracter >= 58 & caracter <=63)) {
+		return true;
+	}
+	return false;
+	}
 }
+
+
