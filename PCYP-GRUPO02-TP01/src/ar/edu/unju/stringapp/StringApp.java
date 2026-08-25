@@ -37,6 +37,11 @@ public class StringApp {
 		System.out.println("Cantidad de Saltos de Línea: " + cantidadLineas);
 		System.out.println("Cantidad de Signos de Puntuación: " + cantidadSignos);
 		
+		String textoModificado = StringUtils.codificarVocales(texto);
+		
+		System.out.println("\n---------- TEXTO MODIFICADO ----------");
+		System.out.println("\n" + textoModificado);
+		
 		//Comando que usé para testear como se vé el archivo en consola
 		//System.out.println(StringUtils.convertirArchivo("src/resources/TP01Frase.txt"));
 	}

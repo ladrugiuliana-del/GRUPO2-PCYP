@@ -73,6 +73,36 @@ public static boolean esSigno(char caracter) {
 	}
 	return false;
 	}
+
+public static String codificarVocales(String frase) {
+    if (frase == null) {
+        return "";
+    }
+
+    StringBuilder resultado = new StringBuilder();
+    String vocales = "aeiouAEIOUáéíóúÁÉÍÓÚüÜ";
+
+    for (int i = 0; i < frase.length(); i++) {
+        char c = frase.charAt(i);
+
+        // Verificamos si el carácter actual es una vocal
+        if (vocales.indexOf(c) != -1) {
+            // 1. Obtenemos su valor ASCII/Unicode y le adicionamos 20
+            int nuevoCodigoAscii = (int) c + 20;
+            
+            // 2. Convertimos el nuevo valor de regreso a carácter
+            char nuevoCaracter = (char) nuevoCodigoAscii;
+            
+            // 3. Lo agregamos a nuestro resultado
+            resultado.append(nuevoCaracter);
+        } else {
+            // Si no es vocal, se mantiene tal cual está
+            resultado.append(c);
+        }
+    }
+
+    return resultado.toString();
+}
 }
 
 
