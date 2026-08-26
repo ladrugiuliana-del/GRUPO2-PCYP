@@ -43,7 +43,10 @@ public class Vector {
 			System.out.println("\n---------- OPERACIONES -------------");
 			
 			Operaciones.sumarPromediarPositivos(numeros);
+			Operaciones.sumarPromediarNegativos(numeros);
 			Operaciones.sumarPromediarPosicionPar(numeros);
+			Operaciones.sumarPromediarPosicionImpar(numeros);
+			
 			scanner.close();
 	
 
