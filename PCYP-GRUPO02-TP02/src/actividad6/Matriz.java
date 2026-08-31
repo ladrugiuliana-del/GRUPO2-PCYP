@@ -15,11 +15,6 @@ public class Matriz {
 		}
 	}
 	
-	public void initMatriz() {
-		for(int i = 0; i < 10; ++i) {setCampoMatriz(0, i, i);}
-		for(int i = 0; i < 10; ++i) {setCampoMatriz(i, 0, i);}
-	}
-	
 	public void fillMatriz() {
 		for(int i = 0; i < 10; ++i) {
 			for(int j = 0; j < 10; ++j) {
