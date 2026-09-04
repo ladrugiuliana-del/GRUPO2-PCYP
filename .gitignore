@@ -1,1 +1,10 @@
-/.metadata/
+# Ignorar configuraciones locales de Eclipse / STS
+.metadata/
+.recommenders/
+bin/
+tmp/
+*.tmp
+*.bak
+*.class
+*.jar
+*.log
