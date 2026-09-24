@@ -1,4 +1,4 @@
-package punto_5;
+package actividad5;
 
 class ImpresorMatriz {
     public synchronized void imprimirFila(String nombreMatriz, int numFila, int[] fila) {

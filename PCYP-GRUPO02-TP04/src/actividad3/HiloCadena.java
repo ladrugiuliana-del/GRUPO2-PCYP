@@ -1,4 +1,4 @@
-package punto_3;
+package actividad3;
 
 class HiloCadena extends Thread {
     private String cadena;

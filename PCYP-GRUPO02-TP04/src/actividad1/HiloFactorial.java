@@ -1,4 +1,4 @@
-package punto_1;
+package actividad1;
 
 public class HiloFactorial extends Thread {
     private int numero;

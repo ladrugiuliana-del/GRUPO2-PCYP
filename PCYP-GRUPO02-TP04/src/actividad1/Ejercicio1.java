@@ -1,4 +1,4 @@
-package punto_1;
+package actividad1;
 
 public class Ejercicio1 {
     public static void ejecutarPrueba(int ejecucion, int num1, int num2) {

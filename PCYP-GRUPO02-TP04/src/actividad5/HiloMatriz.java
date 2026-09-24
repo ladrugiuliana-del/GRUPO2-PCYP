@@ -1,4 +1,4 @@
-package punto_5;
+package actividad5;
 
 class HiloMatriz extends Thread {
     private int[][] matriz;

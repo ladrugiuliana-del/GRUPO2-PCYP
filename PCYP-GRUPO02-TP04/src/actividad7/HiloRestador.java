@@ -1,9 +1,9 @@
-package punto_7;
+package actividad7;
 
-class HiloSumador extends Thread {
+class HiloRestador extends Thread {
     private RecursoCompartido recurso;
 
-    public HiloSumador(RecursoCompartido recurso, String nombre) {
+    public HiloRestador(RecursoCompartido recurso, String nombre) {
         super(nombre);
         this.recurso = recurso;
     }
@@ -11,7 +11,7 @@ class HiloSumador extends Thread {
     @Override
     public void run() {
         for (int i = 0; i < 100; i++) {
-            recurso.sumar();
+            recurso.restar();
         }
     }
 }

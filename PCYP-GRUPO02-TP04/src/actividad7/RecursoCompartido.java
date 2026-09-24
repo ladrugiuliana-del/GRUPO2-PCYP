@@ -1,4 +1,4 @@
-package punto_7;
+package actividad7;
 
 class RecursoCompartido {
     private int h = 0;
